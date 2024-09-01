@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height:100vh;
+}
+
+p{
+    margin-left: 50px;
+    width:60%;
+}
+.titlin{
+    margin-left: 65px;
+    line-height: 35px;
+}
+.bul{
+    list-style-type: disc;
+}
+
+.p-head{
+    margin-left:50px;
+    margin-top: 70px;
+
+}
+.ph{
+    margin-top: 35px;
+}
+.para{
+  margin-top: 20px;
+
+}
+.wrapper{
+    position: fixed;
+    top:0px;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px 0px rgba(143, 139, 139,0.3);
+    z-index: 3;
+
+}
+
+.wrapper .logo-name{
+    padding-left: 25px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px !important;
+    letter-spacing: 1.5px !important;
+    color: #5b5b5f ;
+
+}
+span{
+    color:#ff9800 !important;
+}
+.wrapper ul{
+    padding-right: 40px;
+    transition:background-color 0.50s;
+}
+.wrapper ul :hover{
+    background-color: #b8b4b4;
+}
+
+.wrapper ul li{
+    display: inline-block;
+    padding:15px;
+}
+
+.wrapper ul li a{
+    text-decoration: none;
+    font-family: arial;
+    font-size: 14px;
+    padding:20p 10px;
+    color:black;
+    cursor: pointer;
+    
+}
+
+
+.srch-h{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.serbox{
+    margin-left: 50px;
+    margin-top: 70px;
+    width: 60%;
+    height: 200px;
+    background-color: rgb(247, 245, 245);
+    padding:50px;
+}
+
+.searchbox{
+    width:100%;
+    height:45px;
+    border-color: black;
+    border-radius: 4px;
+    z-index: 1;
+    padding-left: 15px;
+    font-size: 17px;
+
+}
+.textdes{
+    position: relative;
+}
+ .boxhead{
+    position: absolute;
+    left: 15px;
+    bottom: 11px;
+    z-index: 0;
+    color:#b8b4b4;
+    font-family: arial;
+    font-size: 15px;
+    transition-duration: 3s ease-in;
+}
+
+.serbtn{
+    position: absolute;
+    left: 350px;
+    top:330px;
+    padding: 12px 20px;
+    border-color: #ff9800;
+    border-width: 1px;
+    outline: none;
+    border-radius: 3px;
+}
+
+.serbtn:hover{
+    color:white;
+    background-color: #ff9800;
+    font-weight: bold;
+    font-size: 15px;
+    overflow: none;
+}
+
+.searchbox:focus+.boxhead{
+    top:-10px;
+    color:red;
+    font-size: 13px;
+}
