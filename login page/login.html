@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        hr{
+            background-color: transparent;
+            outline: none;
+            height: 2px;
+            border-color: black;
+        }
+        body{
+            width: 100vw;
+            height:100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            background: url(img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box1{
+            min-height: 300px;
+            min-width: 400px;
+            max-width: 400px;
+            border: 1px solid black;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 5px black;
+            border-radius: 10px;
+            animation: boxshadow 15s ease infinite;
+        }
+
+        .box1 h3{
+            margin-left: 40%;
+            margin-top: 10px;
+        }
+
+        .box1 hr{
+            margin-top: 20px;
+            width:80%;
+            margin-left: 10%;
+            color: black;
+        }
+
+         
+        .form-group{
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+        }
+       .form-control-1,.form-control-2{
+        position: absolute;
+        top:0;
+        left:0;
+        height: 40px;
+        width:80%;
+        margin-left: 10%;
+        z-index: 1;
+        background-color: transparent;
+        outline: none;
+        border-radius: 3px ;
+        padding-left: 15px;
+        font-size:17px;
+        font-weight: 700;
+       }
+       .form-control-2{
+        margin-top: 70px;
+       }
+       .form-control-1{
+        margin-top: 10px;
+       }
+        
+       .form-label-1,.form-label-2{
+        font-weight: 700;
+        font-size: 17px;
+        transition: 0.3s;
+       }
+       .form-label-1{
+        z-index:2;
+        position: absolute;
+        top:20px;
+        left:15%;
+       }
+
+       .form-label-2{
+        z-index:2;
+        position: absolute;
+        top:80px;
+        left:15%;
+       }
+        
+        .f-p{
+            margin-top: 120px;
+            margin-left: 60%;
+        }
+
+
+       .s-i{
+        margin-top: 20px;
+        margin-left: 38%;
+        width:100px;
+        height:30px;
+        border-radius: 5px;
+        outline: none;
+        background-color: transparent;
+        color:white;
+        font-family:sans-serif;
+        font-size: 15px;
+       }
+        
+       a{
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 700;
+       }
+
+       .form-control-1:focus+.form-label-1{
+        color:transparent
+       }
+       .form-control-2:focus+.form-label-2{
+        color:transparent
+       }
+
+       @keyframes boxshadow{
+        0%{
+            box-shadow: 10px 10px 15px #d78d8d;
+        }
+        5%{
+            box-shadow: 5px 5px 5px  black;
+        }
+        10%{
+            box-shadow: 10px 10px 15px  #efe978;
+        }
+        15%{
+            box-shadow: 5px 5px 5px black;
+        }
+        10%{
+            box-shadow: 10px 10px 15px  #7abeee;
+        }
+        20%{
+            box-shadow: 10px 10px 15px  #efe978;
+        }
+        25%{
+            box-shadow: 5px 5px 5px black;
+        }
+        30%{
+            box-shadow: 10px 10px 15px  #eb4040;
+        }
+        35%{
+            box-shadow: 5px 5px 5px  black;
+        }
+        40%{
+            box-shadow: 10px 10px 15px  #72f06b;
+        }
+        45%{
+            box-shadow: 5px 5px 5px  black;
+        }
+        50%{
+            box-shadow: 10px 10px 15px  #7c78ef;
+        }
+        55%{
+            box-shadow: 5px 5px 5px  black;
+        }
+        60%{
+            box-shadow: 10px 10px 15px  #e671ea;
+        }
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <form>
+        <h3>Log in </h3>
+        <hr>
+
+    
+        <div class="form-group">
+            <input type="text" class="form-control-1 " required>
+            <label class="form-label-1">Enter your Name or Email</label>
+        </div>
+
+        <div class="form-group">
+            <input type="password" class="form-control-2" required>
+            <label class="form-label-2">Enter your Password</label>   
+        </div>
+
+        <div class="f-p"><a href="#">Forget Possword ?</a>
+        </div>
+
+        <div class="Sign-in">
+            <button type="button" class="s-i">Sign in</button>
+        </div>
+        </div></form>
+    </div>
+</body>
+</html>
